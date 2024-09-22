@@ -35,8 +35,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${gunsan.variable} antialiased`}
       >
-        <Header/>
         <Lenis>
+          <Header/>
           {children}
         </Lenis>
       </body>

@@ -3,14 +3,27 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import logo from "@/public/images/logo.png"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Nav from "../nav/nav";
 import { AnimatePresence } from "framer-motion";
+import { useLenisContext } from "@/app/lenis";
 
 export default function Header() {
 
     const pathname = usePathname()
     const [isActive, setIsActive] = useState<boolean>(false)
+
+    const { setIsScrollEnabled } = useLenisContext()
+
+    useEffect(() => {
+        if (setIsScrollEnabled) {
+            if (isActive) {
+                setIsScrollEnabled(false)
+            } else {
+                setIsScrollEnabled(true)
+            }
+        }
+    }, [isActive, setIsScrollEnabled])
   
   return(
     <>

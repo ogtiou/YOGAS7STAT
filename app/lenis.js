@@ -7,7 +7,7 @@ export const useLenisContext = () => useContext(LenisContext)
 
 export default function Lenis({ children }) {
 
-  const lenis = useLenis(({ scroll }) => {
+  const lenis = useLenis(() => {
       // called every scroll
     })
   
@@ -32,3 +32,4 @@ export default function Lenis({ children }) {
     </LenisContext.Provider>
   )
 }
+
