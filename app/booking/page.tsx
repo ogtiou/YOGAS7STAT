@@ -1,5 +1,4 @@
-import Image from "next/image";
-import back from '@/public/images/back.png'
+
 
 export default function booking() {
   return(
@@ -20,7 +19,6 @@ export default function booking() {
             </div>
           </div>
           <div className="absolute z-[6] bg-[#4d4d4d50] w-full h-full opacity-0 opa"></div>
-          {/* <Image src={back} alt="" className="absolute w-full h-full object-cover z-[5] opacity-0 opa"/> */}
           <video src="/videos/yoga.mp4" autoPlay loop muted playsInline className="absolute bg-[#ebded1] w-full h-full object-cover z-[5] brightness-75 opacity-0 opa"/>
         </div>
         <div className="relative flex-1 flex items-center justify-center left-hover a-btn">
@@ -38,7 +36,6 @@ export default function booking() {
             </div>
           </div>
           <div className="absolute z-[6] bg-[#4d4d4d50] w-full h-full opacity-0 opa"></div>
-          {/* <Image src={back} alt="" className="absolute w-full h-full object-cover z-[5] opacity-0 opa"/> */}
           <video src="/videos/yoga.mp4" autoPlay loop muted playsInline className="absolute bg-[#ebded1] w-full h-full object-cover z-[5] brightness-75 opacity-0 opa"/>
         </div>
       </div>
