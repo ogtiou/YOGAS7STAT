@@ -8,7 +8,7 @@ interface fafa {
     setIsActive: (isActive: boolean) => void
 }
 
-export default function nav({ setIsActive }: fafa) {
+export default function Nav({ setIsActive }: fafa) {
 
     const pathname = usePathname()
 

@@ -1,6 +1,6 @@
 
 
-export default function booking() {
+export default function Booking() {
   return(
     <div className="overflow-hidden">
       <div className="w-full h-[200vh] bg-[#ebded1] flex flex-col lg:flex-row lg:h-screen">

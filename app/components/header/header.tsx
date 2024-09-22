@@ -7,7 +7,7 @@ import { useState } from "react";
 import Nav from "../nav/nav";
 import { AnimatePresence } from "framer-motion";
 
-export default function header() {
+export default function Header() {
 
     const pathname = usePathname()
     const [isActive, setIsActive] = useState<boolean>(false)
