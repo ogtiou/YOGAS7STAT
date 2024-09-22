@@ -5,7 +5,7 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 const LenisContext = createContext()
 export const useLenisContext = () => useContext(LenisContext)
 
-export default function lenis({ children }) {
+export default function Lenis({ children }) {
 
   const lenis = useLenis(({ scroll }) => {
       // called every scroll
