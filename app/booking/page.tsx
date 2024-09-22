@@ -19,7 +19,7 @@ export default function Booking() {
             </div>
           </div>
           <div className="absolute z-[6] bg-[#4d4d4d50] w-full h-full opacity-0 opa"></div>
-          <video src="/videos/yoga.mp4" autoPlay loop muted playsInline className="absolute bg-[#ebded1] w-full h-full object-cover z-[5] brightness-75 opacity-0 opa"/>
+          <video src="/videos/yogavid.mp4" autoPlay loop muted playsInline className="absolute bg-[#ebded1] w-full h-full object-cover z-[5] brightness-75 opacity-0 opa"/>
         </div>
         <div className="relative flex-1 flex items-center justify-center left-hover a-btn">
           <div className="relative flex flex-col items-center z-10">
@@ -36,7 +36,7 @@ export default function Booking() {
             </div>
           </div>
           <div className="absolute z-[6] bg-[#4d4d4d50] w-full h-full opacity-0 opa"></div>
-          <video src="/videos/yoga.mp4" autoPlay loop muted playsInline className="absolute bg-[#ebded1] w-full h-full object-cover z-[5] brightness-75 opacity-0 opa"/>
+          <video src="/videos/yogavid.mp4" autoPlay loop muted playsInline className="absolute bg-[#ebded1] w-full h-full object-cover z-[5] brightness-75 opacity-0 opa"/>
         </div>
       </div>
     </div>

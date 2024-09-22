@@ -60,7 +60,7 @@ export default function Home() {
       <div className="relative w-full h-screen flex items-center justify-center grad z-20">
         <div className="w-full h-full">
           <div className="absolute bg-[#63636344] w-full h-full"></div>
-          <video src="/videos/yoga.mp4" autoPlay loop muted playsInline className="relative bg-[#2e362e] object-cover w-full h-full z-[-1] brightness-75"/>
+          <video src="/videos/yogavid.mp4" autoPlay loop muted playsInline className="relative bg-[#2e362e] object-cover w-full h-full z-[-1] brightness-75"/>
         </div>
         <div className="absolute w-full h-full flex items-center justify-center flex-col">
           <div className="w-full flex flex-col justify-center items-center leading-[0.65] 
