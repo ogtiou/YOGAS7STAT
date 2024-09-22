@@ -12,6 +12,13 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        gunsan: ['var(--font-gunsan)', 'sans-serif']
+      },
+      screens: {
+        '3xl': '2000px',
+        '4xl': '2500px'
+      }
     },
   },
   plugins: [],

@@ -2,26 +2,127 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #ebded1;
+  transition: 0.2s ease;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2b3d29bd;
+  border-radius: 9999px;
+  border: solid 2px #ebded1;
+  transition: 0.2s ease;
+  cursor: grab;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2b3d29f1;
+  transition: 0.2s ease;
+}
+::-webkit-scrollbar-thumb:active {
+  cursor: grabbing;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #ebded1;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* lenis */
+html.lenis, html.lenis body {
+  height: auto;
 }
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* underline */
+.under::before {
+  @apply content-[''] absolute w-full h-[2px] bg-[black] bottom-0;
+}
+.under2::before {
+  @apply content-[''] absolute w-full h-[4px] bg-[#2b3d29bd] bottom-0;
+}
+.under-hover {
+  @apply transition-all;
+}
+.under-hover:hover {
+  @apply text-black;
+} 
+
+.button1 {
+  @apply transition-all duration-300 will-change-transform; 
+}
+.button1:hover {
+  @apply bg-[#e7e1dbda] backdrop-blur-md scale-[1.03];
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.438);
+}
+
+.left-hover, .left-text {
+  @apply transition-all duration-200;
+}
+
+.left-hover:hover .left-text {
+  @apply text-[#ebded1];
+}
+
+.left-hover:hover .opa {
+  @apply opacity-100;
+}
+
+.opa {
+  @apply transition-all duration-[0.4s];
+}
+
+.a-btn:hover .p-btn {
+  @apply opacity-0;
+}
+
+.a-btn:hover .a-btn2 {
+  @apply opacity-100;
+}
+
+.p-btn:hover .a-btn {
+  @apply opacity-0;
+}
+
+.btn-hover:hover {
+  @apply backdrop-blur-md bg-[#ebded1e0] scale-[1.03] text-[#10160f];
+}
+
+.varaa {
+  @apply transition-all duration-200;
+}
+
+.varaa:hover {
+  @apply bg-black border-black text-white shadow-xl scale-105;
+}
+
+/* front page insta and facebook hocers */
+.insta-och-face {
+  @apply transition-all;
+}
+
+.insta-och-face:hover {
+  @apply bg-[#e4ded8] text-black scale-105;
+}
+
