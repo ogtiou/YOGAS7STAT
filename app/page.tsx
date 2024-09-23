@@ -102,7 +102,7 @@ export default function Home() {
                 <a href="/booking" className="border-2 rounded-full px-8 py-2 text-lg font-semibold
                 border-[#c59245] varaa 3xl:text-2xl">Varaa</a>
                 <p className="text-sm text-[#2e362eb2] cursor-default select-none">
-                  ePassi, Edenred, Smartum, Liikunta setelit
+                  ePassi, Edenred, Smartum
                 </p>
             </div>
           </div>
@@ -129,7 +129,7 @@ export default function Home() {
 
       {/* footer */}
       <div className="relative w-full h-auto bg-[#acc89f] rounded-t-[2rem] flex flex-col items-center justify-between">
-        <p className="pt-8 text-white text-2xl sm:text-3xl font-semibold">Sisäänkäynti 5A, rapusta B</p>
+        <p className="pt-8 text-white text-2xl sm:text-3xl font-semibold">Sisäänkäynti 5A rappu B, 5krs</p>
         <div className="w-full h-[25rem] flex items-center justify-center pt-8">
           <iframe className="rounded-2xl w-[95%] md:w-[40rem] h-full"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1107.0657724405653!2d24.877922466435255!3d60.148673506340685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920be8fe13e999%3A0x8532842a7ffbcae5!2sYOGA%20S7!5e0!3m2!1sen!2sfi!4v1727035105860!5m2!1sen!2sfi"

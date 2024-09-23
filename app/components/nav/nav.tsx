@@ -19,7 +19,7 @@ export default function Nav({ setIsActive }: fafa) {
             <Link onClick={() => setIsActive(false)} href={'/'} className={`${pathname === '/' ? 'under2' : ''} relative`}>Home</Link>
             <a onClick={() => setIsActive(false)} href="https://3dmagazine.aflip.in/e585a148c9.html" target="blank" className="">About</a>
             <Link onClick={() => setIsActive(false)} href={'/booking'} className={`${pathname === '/booking' ? 'under2' : ''} relative`}>Booking</Link>
-            <a onClick={() => setIsActive(false)} href="mailto:teo.raju@gmail.com" className="">Contact</a>
+            <a onClick={() => setIsActive(false)} href="mailto:rajusanna7@gmail.com" className="">Contact</a>
         </div>
     </motion.div>
   )
