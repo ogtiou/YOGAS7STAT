@@ -5,7 +5,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 import { useLenisContext } from "./lenis";
-import bali from '@/public/images/bali 2.png'
+import bali from '@/public/images/bali2.png'
 import img2 from '@/public/images/img2.jpg'
 import img3 from '@/public/images/img3.png'
 gsap.registerPlugin(ScrollTrigger, useGSAP);
