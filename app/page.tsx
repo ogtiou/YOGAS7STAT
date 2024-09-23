@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
-import { useLenisContext } from "./lenis";
+// import { useLenisContext } from "./lenis";
 import bali from '@/public/images/bali.png'
 import img2 from '@/public/images/img2.jpg'
 import img3 from '@/public/images/img3.png'
@@ -16,7 +16,7 @@ export default function Home() {
   const texts = useRef(null)
   const currentYear = new Date().getFullYear()
 
-  const { setIsScrollEnabled } = useLenisContext()
+  // const { setIsScrollEnabled } = useLenisContext()
 
   useGSAP(() => {
 
@@ -30,11 +30,11 @@ export default function Home() {
         ease: 'power3.inOut'
       },
       onStart: () => {
-        setIsScrollEnabled(false),
+        // setIsScrollEnabled(false),
         document.body.style.overflow = 'hidden'
       },
       onComplete: () => {
-        setIsScrollEnabled(true),
+        // setIsScrollEnabled(true),
         document.body.style.overflow = ''
       }
     })
@@ -49,7 +49,7 @@ export default function Home() {
     }).to(starter.current, {
       height: 0
     }, 2)
-  }, [starter, texts, setIsScrollEnabled])
+  }, [starter, texts])
 
   return (
     <div className="overflow-hidden bg-[#ebded1]">
@@ -63,7 +63,7 @@ export default function Home() {
           <video src="/videos/yogavid.mp4" autoPlay loop muted playsInline className="relative bg-[#2e362e] object-cover w-full h-full z-[-1] brightness-75"/>
         </div>
         <div className="absolute w-full h-full flex items-center justify-center flex-col">
-          <div className="w-full flex flex-col justify-center items-center leading-[0.65] 
+          <div className="w-full translate-y-[50%] sm:translate-y-0 flex flex-col justify-center items-center leading-[0.65] 
               text-[#d8d0c7] font-bold uppercase text-[6rem] font-gunsan 
               select-none sm:text-[10rem] md:text-[25vw] lg:text-[18rem] xl:text-[22rem] 3xl:text-[28rem] 4xl:text-[32rem] pointer-events-none">
               <p className="-translate-x-[8%]">Yogas7</p> 

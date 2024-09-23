@@ -1,35 +1,35 @@
-'use client'
-import { ReactLenis, useLenis } from 'lenis/react'
-import React, { createContext, useContext, useEffect, useState } from 'react';
+// 'use client'
+// import { ReactLenis, useLenis } from 'lenis/react'
+// import React, { createContext, useContext, useEffect, useState } from 'react';
 
-const LenisContext = createContext()
-export const useLenisContext = () => useContext(LenisContext)
+// const LenisContext = createContext()
+// export const useLenisContext = () => useContext(LenisContext)
 
-export default function Lenis({ children }) {
+// export default function Lenis({ children }) {
 
-  const lenis = useLenis(() => {
-      // called every scroll
-    })
+//   const lenis = useLenis(() => {
+//       // called every scroll
+//     })
   
-  const [isScrollEnabled, setIsScrollEnabled] = useState(true)
+//   const [isScrollEnabled, setIsScrollEnabled] = useState(true)
 
-  useEffect(() => {
-    if (lenis) {
-      if (isScrollEnabled) {
-        lenis.start()
-      } else {
-        lenis.stop()
-      }
-    }
-  }, [isScrollEnabled, lenis])
+//   useEffect(() => {
+//     if (lenis) {
+//       if (isScrollEnabled) {
+//         lenis.start()
+//       } else {
+//         lenis.stop()
+//       }
+//     }
+//   }, [isScrollEnabled, lenis])
     
 
-  return (
-    <LenisContext.Provider value={{ isScrollEnabled, setIsScrollEnabled }}>
-      <ReactLenis options={{lerp: 0.15}} root>
-        {children}
-      </ReactLenis>
-    </LenisContext.Provider>
-  )
-}
+//   return (
+//     <LenisContext.Provider value={{ isScrollEnabled, setIsScrollEnabled }}>
+//       <ReactLenis options={{duration: 0.8}} root>
+//         {children}
+//       </ReactLenis>
+//     </LenisContext.Provider>
+//   )
+// }
 

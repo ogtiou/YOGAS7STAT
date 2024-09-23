@@ -6,25 +6,38 @@ import logo from "@/public/images/logo.png"
 import { useEffect, useState } from "react";
 import Nav from "../nav/nav";
 import { AnimatePresence } from "framer-motion";
-import { useLenisContext } from "@/app/lenis";
+// import { useLenisContext } from "@/app/lenis";
 
 export default function Header() {
 
     const pathname = usePathname()
     const [isActive, setIsActive] = useState<boolean>(false)
 
-    const { setIsScrollEnabled } = useLenisContext()
+    // const { setIsScrollEnabled } = useLenisContext()
 
-    useEffect(() => {
-        if (setIsScrollEnabled) {
-            if (isActive) {
-                setIsScrollEnabled(false)
-            } else {
-                setIsScrollEnabled(true)
-            }
-        }
-    }, [isActive, setIsScrollEnabled])
+    // useEffect(() => {
+    //     if (setIsScrollEnabled) {
+    //         if (isActive) {
+    //             setIsScrollEnabled(false)
+    //         } else {
+    //             setIsScrollEnabled(true)
+    //         }
+    //     }
+    // }, [isActive, setIsScrollEnabled])
   
+    useEffect(() => {
+        if (isActive) {
+            document.body.style.overflow = 'hidden'
+        } else {
+            document.body.style.overflow = ""
+        }
+
+        return () => {
+            document.body.style.overflow = ""
+        }
+    }, [isActive])
+
+
   return(
     <>
         <div className="fixed px-4 md:px-8 4xl:px-[5rem] py-4 z-[55]">
