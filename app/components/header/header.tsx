@@ -39,7 +39,7 @@ export default function Header() {
                 <Link href={'/'} className={`${pathname === '/' ? 'under text-black' : 'under-hover'} relative`}>Home</Link>
                 <a href="https://3dmagazine.aflip.in/e585a148c9.html" target="blank" className="under-hover">About</a>
                 <Link href={'/booking'} className={`${pathname === '/booking' ? 'under text-black' : 'under-hover'} relative`}>Booking</Link>
-                <a href="mailto:teo.raju@gmail.com" className="under-hover">Contact</a>
+                <a href="mailto:rajusanna7@gmail.com" className="under-hover">Contact</a>
             </div>
         </div>
         <div className="fixed top-0 right-0 mx-4 my-8 z-50 flex overflow-hidden md:hidden text-lg bg-[#d8d0c7a9] backdrop-blur-sm px-4 py-1 rounded-lg">
