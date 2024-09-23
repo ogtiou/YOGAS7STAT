@@ -106,9 +106,9 @@ export default function Home() {
                 </p>
             </div>
           </div>
-          <div className="flex-1 flex items-center justify-center z-[39]">
-            <div className="w-[90%] h-[30rem] mt-4 xl:mt-0 xl:h-full rounded-xl overflow-hidden">
-              <Image src={bali} alt="bali image" className="w-full h-full object-cover"/>
+          <div className="flex-1 flex items-center justify-center">
+            <div className="w-[90%] h-[30rem] mt-4 xl:mt-0 xl:h-full">
+              <Image src={bali} alt="bali image" className="w-full h-full object-cover rounded-lg"/>
             </div>
           </div>
         </div>
