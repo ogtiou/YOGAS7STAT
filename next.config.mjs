@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: "export",
-    // basePath: '/YOGAS7STATIC',
+    basePath: '',
     trailingSlash: true,
     images: {
         unoptimized: true
