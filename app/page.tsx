@@ -5,9 +5,9 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 // import { useLenisContext } from "./lenis";
-import bali from '@/public/images/bali.png'
 import img2 from '@/public/images/img2.jpg'
 import img3 from '@/public/images/img3.png'
+import img4 from '@/public/images/img4.jpg'
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 export default function Home() {
@@ -106,9 +106,9 @@ export default function Home() {
                 </p>
             </div>
           </div>
-          <div className="flex-1 flex items-center justify-center">
-            <div className="w-[90%] h-[30rem] mt-4 xl:mt-0 xl:h-full">
-              <Image src={bali} alt="bali image" className="w-full h-full object-cover rounded-lg"/>
+          <div className="relative flex-1 flex items-center justify-center">
+            <div className="w-[90%] h-[30rem] mt-4 xl:mt-0 xl:h-full xl:w-[65%] overflow-hidden">
+              <Image src={img4} alt="image" className="w-full h-full object-cover rounded-lg"/>
             </div>
           </div>
         </div>

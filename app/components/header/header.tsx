@@ -37,7 +37,6 @@ export default function Header() {
         }
     }, [isActive])
 
-
   return(
     <>
         <div className="fixed px-4 md:px-8 4xl:px-[5rem] py-4 z-[55]">
