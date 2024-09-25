@@ -87,9 +87,9 @@ export default function Home() {
       </div>
 
       {/* page2 */}
-      <div className="relative w-full h-auto flex items-center justify-center bg-[#ebded1] py-4 xl:py-0 xl:h-screen">
+      <div className="relative w-full h-auto flex items-center justify-center bg-[#ebded1] py-4 xl:py-0 xl:h-screen z-30">
         <div className="relative w-[95%] h-[90%] rounded-3xl flex flex-col-reverse xl:flex-row items-center bg-[#77977725]">
-          <div className="flex-1 flex items-center justify-center">
+          <div className="relative flex-1 flex items-center justify-center">
             <div className="flex flex-col items-center justify-center text-center w-[95%] mt-8 
               xl:mt-0 md:w-[60%] gap-7 text-[#c59245] mb-8 xl:mb-0">
               <p className="text-5xl sm:text-6xl 3xl:text-8xl font-bold">Moikka</p>
